@@ -87,10 +87,10 @@
 <meta name="description" content="1234567891011121314151617181920212223  package com.jisuanke;import java.io.*;public class first &amp;#123;	public static void main(String args[])		throws IOException 		&amp;#123;			BufferedReader br = new Bu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="同一行输入三个数字 java">
-<meta property="og:url" content="http://yoursite.com/2016/09/19/同一行输入三个数字 java/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/09/21/同一行输入三个数字 java/index.html">
 <meta property="og:site_name" content="尘间">
 <meta property="og:description" content="1234567891011121314151617181920212223  package com.jisuanke;import java.io.*;public class first &amp;#123;	public static void main(String args[])		throws IOException 		&amp;#123;			BufferedReader br = new Bu">
-<meta property="og:updated_time" content="2016-09-19T13:49:45.423Z">
+<meta property="og:updated_time" content="2016-09-21T11:51:39.839Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="同一行输入三个数字 java">
 <meta name="twitter:description" content="1234567891011121314151617181920212223  package com.jisuanke;import java.io.*;public class first &amp;#123;	public static void main(String args[])		throws IOException 		&amp;#123;			BufferedReader br = new Bu">
@@ -114,7 +114,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/19/同一行输入三个数字 java/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/21/同一行输入三个数字 java/"/>
 
   <title> 同一行输入三个数字 java | 尘间 </title>
 </head>
@@ -278,8 +278,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-19T21:49:13+08:00" content="2016-09-19">
-              2016-09-19
+            <time itemprop="dateCreated" datetime="2016-09-21T19:51:07+08:00" content="2016-09-21">
+              2016-09-21
             </time>
           </span>
 
@@ -332,6 +332,7 @@
       
         <hr>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">  package com.jisuanke;</div><div class="line"></div><div class="line">import java.io.*;</div><div class="line"></div><div class="line">public class first &#123;</div><div class="line">	public static void main(String args[])</div><div class="line">		throws IOException </div><div class="line">		&#123;</div><div class="line">			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));</div><div class="line">			String str;</div><div class="line">			String [] str1 = new String[3];</div><div class="line">			int [] data = new int[3];</div><div class="line">			str = br.readLine();</div><div class="line">			str1 = str.split(&quot; &quot;);</div><div class="line">			for(int i=0; i &lt; 3; i++) &#123;</div><div class="line">				data[i] = Integer.parseInt(str1[i]);</div><div class="line">			&#125;</div><div class="line">			int b = data[0] + data[1] + data[2];</div><div class="line">			System.out.println(b);</div><div class="line">			</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>更简单的方法</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">package com.lanqiaobie;</div><div class="line"></div><div class="line">import java.util.*;</div><div class="line"></div><div class="line">public class One</div><div class="line"></div><div class="line">&#123;</div><div class="line">    public static void main(String args[])</div><div class="line">    &#123;</div><div class="line">        Scanner sc = new Scanner(System.in);</div><div class="line">        int a = sc.nextInt();</div><div class="line">        int b = sc.nextInt();</div><div class="line">        int c = sc.nextInt();</div><div class="line">        System.out.println(a + b + c);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <blockquote>
 <p>样例输入：12 3 4<br>样例输出：19</p>
 </blockquote>
